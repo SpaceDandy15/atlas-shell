@@ -1,2 +1,2 @@
 #!/bin/bash
-touch hello useradd betty
+chown betty hello
