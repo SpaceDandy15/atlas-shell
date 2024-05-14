@@ -1,4 +1,5 @@
 #!/bin/env bash
+i guess it wants a comment?
 for _ in {1..10}
 do
        	echo "Best School";
