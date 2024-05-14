@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 #i have to add a hi in the 9th iteration
 counter=0
-while [ $counter -lt 10 ]; do
-	if [ $counter -eq 8 ]; then
-echo "Hi"
-else 
-echo "Best School"
+while (( counter < 10 )); do
+	if (( counter == 8 )); then 
+		echo "Best School)); then
+		echo "Hi"
+	else
+		echo "Best School"
 	fi
-((counter++))
+	((counter++))
 done
