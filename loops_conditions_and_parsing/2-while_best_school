@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # gott have "something"
 counter=0
-whiel [ $counter -lt 10 ]; do
+while [ $counter -lt 10 ]; do
 echo "Best School"
 ((counter++))
 done
