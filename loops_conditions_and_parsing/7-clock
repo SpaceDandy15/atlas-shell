@@ -6,9 +6,11 @@ while (( hour < 12 )); do
 	while (( minute <= 59 )); do
 		echo "Time: $((hour + 1)):$minute"
 		minute=$((minute +1))
+	
 		if (( minute > 59 )); then
 			minute=1
 			hour=$((hour + 1))
+
 			if (( hour == 12 )); then 
 				hour=0
 			fi
