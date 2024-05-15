@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#using a nested loop to display the time 
 hour=0
 minute=1
 while (( hour < 12 )); do 
