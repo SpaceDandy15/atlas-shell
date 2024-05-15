@@ -2,20 +2,13 @@
 #using a nested loop to display the time 
 hour=0
 minute=1
-while (( hour < 12 )); do 
-	while (( minute <= 59 )); do
-		echo "Time: $((hour + 1)):$minute"
-		minute=$((minute +1))
-	
-		if (( minute > 59 )); then
-			minute=1
-			hour=$((hour + 1))
-
-			if (( hour == 12 )); then 
-				hour=0
-			fi
-		fi
-	done
-	minute=1
+while ture ; do 
+	echo "Time: $(printf "%02d;%02d" $hour $minute)"
+	minute=$((minute % 60 + 1))
+	if [[ $minute -eq 60 ]]; then
+		minute =1
+	fi
+	hour =$((hour % 12 + 1))
+	sleep 1
 done
 
