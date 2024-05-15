@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #bash script that displays the contents of the current directory
-find -type f -print0 | while IFS= read -r -d '' file; do
-if [[ $file == -* ]]; then 
-name_after_dash=${file#*-}
-echo "$name_after_dash"
-fi
+for item in *; do
+	if [[ $item == -* ]]; then
+		name_after_dash=${item#*-}
+		echo "$name_after_dash"
+	fi
 done
