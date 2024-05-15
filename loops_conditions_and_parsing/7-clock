@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-#using a nested loop to display the time 
-hour=0
-minute=1
-while true; do 
-	echo "Time: $(printf "%02d;%02d" $hour $minute)"
-	minute=$((minute % 60 + 1))
-	if [[ $minute -eq 60 ]]; then
-		minute =1
-	fi
-	hour=$((hour % 12 + 1))
-	sleep 1
+#using a nested loop to display the time
+HOURS=0
+while [ $HOURS -lt 13 ]
+do 
+	echo "Hour: $HOURS"
+	MINUTES=1
+	while [ $MINUTES -lt 60 ] 
+	do 
+		echo $MINUTES
+		let MINUTES+=1
+	done 
+	let HOURS+=1
 done
-
