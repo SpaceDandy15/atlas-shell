@@ -2,7 +2,7 @@
 #using a nested loop to display the time 
 hour=0
 minute=1
-while ture ; do 
+while true; do 
 	echo "Time: $(printf "%02d;%02d" $hour $minute)"
 	minute=$((minute % 60 + 1))
 	if [[ $minute -eq 60 ]]; then
