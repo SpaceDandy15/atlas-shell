@@ -8,7 +8,7 @@ while true; do
 	if [[ $minute -eq 60 ]]; then
 		minute =1
 	fi
-	hour =$((hour % 12 + 1))
+	hour=$((hour % 12 + 1))
 	sleep 1
 done
 
