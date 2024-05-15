@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#using comment to mention what im doing which is displaying fizz buzz in a muliple of 3 and 5 
+COUNTER=1
+while [ $COUNTER -lt 101 ]
+do 
+	if [ $((COUNTER%15)) = 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $((COUNTER%3)) = 0 ]
+	then
+		echo "Fizz" 
+	elif [ $((COUNTER%5)) = 0 ]
+	then 
+		echo "Buzz"
+	else 
+		echo "$COUNTER"
+	fi 
+	let COUNTER+=1
+done
+
