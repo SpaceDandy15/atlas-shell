@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#parsing an apache file and display the ip and httpcode for each person
+
+awk '{print $1, $9}' apache-access.log
