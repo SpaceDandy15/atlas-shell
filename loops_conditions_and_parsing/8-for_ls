@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 #bash script that displays the contents of the current directory
-for item in *; do
-	if [[ $item == -* ]]; then
-		name_after_dash=${item#*-}
-		echo "$name_after_dash"
-	fi
+for i in *
+do
+	echo "$i" | cut -d'-' -f2
 done
